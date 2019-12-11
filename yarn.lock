@@ -4333,10 +4333,10 @@ react-native-reanimated@^1.4.0:
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.4.0.tgz#7f1acbf9be08492d834f512700570978052be2f9"
   integrity sha512-tO7nSNNP+iRLVbkcSS5GXyDBb7tSI02+XuRL3/S39EAr35rnvUy2JfeLUQG+fWSObJjnMVhasUDEUwlENk8IXw==
 
-react-native-svg@^9.13.5:
-  version "9.13.5"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-9.13.5.tgz#bfa109d72fea909ce0d576e411be2567332c1350"
-  integrity sha512-njtAxJjTihm0qPnRGS3p/IZWkrUGn0aCO7BdcTRmtOw2gxMN3Q0Po5rRjcuihHeA9lJlPBj9MiRCm6jlBTFHcA==
+react-native-svg@^9.13.6:
+  version "9.13.6"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-9.13.6.tgz#5365fba2bc460054b90851e71f2a71006a5d373f"
+  integrity sha512-vjjuJhEhQCwWjqsgWyGy6/C/LIBM2REDxB40FU1PMhi8T3zQUwUHnA6M15pJKlQG8vaZyA+QnLyIVhjtujRgig==
   dependencies:
     css-select "^2.0.2"
     css-tree "^1.0.0-alpha.37"

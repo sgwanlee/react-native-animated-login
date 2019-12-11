@@ -1,12 +1,7 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  Dimensions,
-  TextInput
-} from "react-native";
+import { View, Text, StyleSheet, Dimensions, TextInput } from "react-native";
+
+import Svg, { Image, Circle, ClipPath } from "react-native-svg";
 
 import Animated, { Easing } from "react-native-reanimated";
 import { State, TapGestureHandler } from "react-native-gesture-handler";
@@ -96,7 +91,7 @@ class MusicApp extends Component {
 
     this.bgY = interpolate(this.buttonOpacity, {
       inputRange: [0, 1],
-      outputRange: [-height / 3, 0],
+      outputRange: [-height / 3 - 50, 0],
       extrapolate: Extrapolate.CLAMP
     });
 
@@ -130,20 +125,28 @@ class MusicApp extends Component {
         style={{
           flex: 1,
           justifyContent: "flex-end",
-          backgroundColor: "red"
+          backgroundColor: "white"
         }}
       >
         <Animated.View
           style={{
             ...StyleSheet.absoluteFill,
-            transform: [{ translateY: this.bgY }],
-            backgroundColor: "yellow"
+            transform: [{ translateY: this.bgY }]
           }}
         >
-          {/* <Image
-            source={require("../assets/bg.jpg")}
-            style={{ flex: 1, height: null, width: null }}
-          /> */}
+          <Svg height={height + 50} width={width}>
+            <ClipPath id="clip">
+              <Circle r={height + 50} cx={width / 2} />
+            </ClipPath>
+
+            <Image
+              href={require("../assets/bg.jpg")}
+              width={width}
+              height={height + 50}
+              preserveAspectRatio="xMidYMid slice"
+              clipPath="url(#clip)"
+            />
+          </Svg>
         </Animated.View>
         <View
           style={{
